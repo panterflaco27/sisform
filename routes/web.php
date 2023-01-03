@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\EgresadoController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\SessionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +15,7 @@ use App\Http\Controllers\SessionController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
 });
 
@@ -27,4 +27,18 @@ Route::get('/register', [RegisterController::class, 'create'])
 
 Route::post('/register', [RegisterController::class, 'store'])
     -> name('register.store');
+*/
+Route::get('/', function(){
+    return view('egresados');
+});
+/*
+Route::get('/egresados', function(){
+    return view('egresados');
+});
 
+Route::get('/formularios', function(){
+    return view('formularios');
+});*/
+
+
+Route::resource('egresado', EgresadoController::class);

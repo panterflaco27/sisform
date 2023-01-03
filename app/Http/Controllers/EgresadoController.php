@@ -14,7 +14,7 @@ class EgresadoController extends Controller
      */
     public function index()
     {
-        //
+        return view('Egresado.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class EgresadoController extends Controller
      */
     public function create()
     {
-        //
+        return view('Egresado.forme');
     }
 
     /**
