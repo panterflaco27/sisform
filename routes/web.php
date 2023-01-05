@@ -42,3 +42,5 @@ Route::get('/formularios', function(){
 
 
 Route::resource('egresado', EgresadoController::class);
+
+Route::resource('egresado', EgresadoController::class);
